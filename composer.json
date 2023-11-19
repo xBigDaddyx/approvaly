@@ -1,0 +1,41 @@
+{
+    "name": "xbigdaddyx/approvaly",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/xbigdaddyx/approvaly",
+    "keywords": ["Laravel", "Approvaly"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xbigdaddyx\\Approvaly\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xbigdaddyx\\Approvaly\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xbigdaddyx\\Approvaly\\ApprovalyServiceProvider"
+            ],
+            "aliases": {
+                "Approvaly": "Xbigdaddyx\\Approvaly\\Facades\\Approvaly"
+            }
+        }
+    }
+}
